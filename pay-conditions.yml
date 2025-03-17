@@ -1,7 +1,7 @@
 apiVersion: api.cerbos.dev/v1
 resourcePolicy:
   version: "default"
-  resource: "payconditions"
+  resource: "pay-conditions"
   rules:
     - actions: ["*"]
       effect: EFFECT_ALLOW
