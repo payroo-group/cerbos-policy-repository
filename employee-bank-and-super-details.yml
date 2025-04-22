@@ -1,9 +1,9 @@
 apiVersion: api.cerbos.dev/v1
 resourcePolicy:
   version: "default"
-  resource: "verifications"
+  resource: "employee-bank-and-super-details"
   rules:
-    - actions: ["*"]
+    - actions: ["verify-bank", "verify-super"]
       effect: EFFECT_ALLOW
       roles:
         - EMPLOYEE
