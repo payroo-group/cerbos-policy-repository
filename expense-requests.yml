@@ -1,0 +1,14 @@
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: "default"
+  resource: "expense-requests"
+  rules:
+    - actions: ["*"]
+      effect: EFFECT_ALLOW
+      roles:
+        - ORG_ADMIN
+        - MANAGER
+    - actions: ["create", "view", "update", "My Expenses"]
+      effect: EFFECT_ALLOW
+      roles:
+        - EMPLOYEE
