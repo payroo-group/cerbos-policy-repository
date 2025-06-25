@@ -3,7 +3,7 @@ resourcePolicy:
   version: "default"
   resource: "calendar"
   rules:
-    - actions: ["*"]
+    - actions: ["view"]
       effect: EFFECT_ALLOW
       roles:
         - EMPLOYEE
